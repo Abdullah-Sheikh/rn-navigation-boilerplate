@@ -20,7 +20,10 @@ const Stack = createNativeStackNavigator();
 function AppNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator 
+      screenOptions={{
+        headerShown: false
+      }}>
         <Stack.Screen name="Drawer" component={DrawerNavigator} />
         <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>

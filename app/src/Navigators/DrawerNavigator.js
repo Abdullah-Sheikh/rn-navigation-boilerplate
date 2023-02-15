@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Button, View } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
+import TabNavigator from './TabNavigator';
 
 function HomeScreen({ navigation }) {
   return (
@@ -33,7 +34,7 @@ export default function DrawerNavigator() {
   return (
    
       <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={HomeScreen} />
+        <Drawer.Screen name="App" component={TabNavigator} />
         <Drawer.Screen name="Notifications" component={NotificationsScreen} />
       </Drawer.Navigator>
    
