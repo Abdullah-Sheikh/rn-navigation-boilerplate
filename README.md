@@ -1,1 +1,1 @@
-# rn-navigation-boilerplate
+# React Navigation Boilerplate
